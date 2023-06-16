@@ -1,0 +1,236 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Login-bg {
+  background-color: rgb(0, 238, 255);
+}
+
+.text {
+  font-family: "Helvetica";
+  text-align: center;
+  font-size: 14px;
+  color: rgb(104, 102, 102);
+}
+
+.heading {
+  text-align: center;
+  color: brown;
+}
+
+.background-image {
+  background-image: url("./components/Background/BG.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: "Arial Narrow Bold";
+  overflow: hidden;
+}
+
+.blur-background {
+  backdrop-filter: blur(4px); 
+  padding: 100%;
+}
+.single-line {
+  white-space: nowrap; 
+  overflow: hidden; 
+  background-color: rgb(191, 198, 206);
+}
+
+.error-text {
+  font-size: 10px;
+  font-style: italic;
+  color: red;
+}
+
+.admin-button-container {
+  position: absolute;
+ 
+}
+
+.adminLocation-bg {
+  background-image: url("./components/Background/UserBG.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loc-head{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: 3px solid black;
+  padding: 5px;
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+   top: 38%; 
+  position:absolute;
+   right: 30%; 
+}
+
+.add-btn {
+  background-color: rgb(10, 67, 252); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 20px; /* Some padding */
+  font-size: 20px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  text-decoration:none;
+  /* top: 12%;
+  position: absolute;
+  right: 5%; */
+}
+.mt-10{
+  margin-top: 60px !important;
+}
+/* Darker background on mouse-over */
+.add-btn:hover {
+  background-color: rgba(8, 8, 8, 0.863);
+}
+.add-btn.curved {
+  border-radius: 10px; /* Adjust the value to control the level of curvature */
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(61, 60, 60, 0.473);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.popup form {
+  background-color: #f5eff3da;
+  padding: 20px;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  border: 2px solid black;
+  align-items:flex-start;
+}
+.popup form label,
+.popup form input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  text-align: center;
+}
+
+.thead-dark{
+  color: rgb(243, 17, 17);
+  background-color: black;
+}
+
+.popup-del {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(61, 60, 60, 0.473);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.popup-del1{
+  background-color: #f5eff3da;
+  padding: 20px;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  border: 2px solid black;
+  align-items:flex-start;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: -ms-page;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-content button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.color{
+  background-color: aqua;
+  font-size: x-large;
+  
+}
